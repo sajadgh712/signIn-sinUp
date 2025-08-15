@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./font/Montserrat-SemiBold.ttf);
+}
+
 body{
     background-color: #636fff;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 1px;
@@ -88,8 +94,8 @@ body{
     transition: .15s all ease;
 }
 
-.login-nav_item a:hover::after,
-.login-nav_item a:after{
+.login-nav_item a:hover:after,
+.login-nav_item.active a:after{
     background-color: rgb(17, 97, 237);
     height: 2px;
     right: 0;
@@ -171,6 +177,7 @@ body{
 
 .login_forgot{
     display: block;
+    margin-top: 3rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.75);
     font-size: .75rem;
